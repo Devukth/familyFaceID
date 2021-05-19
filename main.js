@@ -7,8 +7,6 @@ Webcam.set ({
 webcam = document.getElementById("webcam");
 Webcam.attach(webcam);
 
-console.log("ml5 version: " + ml5.version);
-var classifier = ml5.imageClassifier("https://teachablemachine.withgoogle.com/models/LmlwFDNZM/model.json", modelLoaded);
 
 function modelLoaded() {
     console.log('Loaded model');
