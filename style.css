@@ -10,6 +10,6 @@ body {
 #webcam, #result {
     display: block;
     border: 5px solid #cccccc;
-    width: 450px;
-    height: 250px;
+    width: 410px;
+    height: 300px;
 }
