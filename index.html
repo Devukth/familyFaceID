@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Face Recognition</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+		<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <center>
+            <h1>Face Recognition</h1>
+            <h2>Model is trained to recognise these two people:</h2>
+            <p class="bg-blue">Me</p>
+            <p class="bg-blue">Father</p>
+            <h2>Webcam View</h2>
+            <div id="webcam"></div><br>
+            <button id="takeImage" class="btn btn-info" onclick="captureImage()">Capture Image</button>
+            <br><br><br><br>
+            <h2>Result Image</h2>
+            <div id="result"></div><br>
+            <button id="identifyImage" class="btn btn-info" onclick="identifyImage()">Identify Image</button>
+            <br><br>
+            <div id="prediction">
+                <h3 id="familyName">
+                    <b>Name:</b> 
+                    NONE
+                </h3>
+                <h3 id="familyAccuracy">
+                    <b>Accuracy:</b> 
+                    0%
+                </h3>
+            </div>
+        </center>
+        <script src="main.js" defer></script>
+    </body>
+</html>

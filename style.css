@@ -1,0 +1,15 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background-color: #b458ff !important;
+}
+.bg-blue {
+    background-color: #4e42ff;
+}
+#webcam, #result {
+    display: block;
+    border: 5px solid #cccccc;
+    width: 450px;
+    height: 250px;
+}
